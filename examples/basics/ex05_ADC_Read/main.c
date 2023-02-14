@@ -2,10 +2,10 @@
 #include <bsp.h>
 #include <rtl.h>
 
-void read_analog_3()
+void read_analog_0()
 {
 
-	float adc3 = Adc_GetVoltage(3);
+	float adc0 = Adc_GetVoltage(0);
 
 	/*******************************************************
 	 * Adc_GetVoltage
@@ -21,7 +21,7 @@ void read_analog_3()
 	 * - id: Id of ADC (ADC_ID_0, ..., ADC_ID_3).
 	 *******************************************************/
 
-	Uart1_Printf("ADC3: %f\r\n", adc3);
+	Uart1_Printf("ADC0: %f\r\n", adc0);
 }
 
 int main()
@@ -30,7 +30,7 @@ int main()
 
 	Adc_Init(); // Init ADC Function
 
-	Timer_Create(1000, read_analog_3);
+	Timer_Create(1000, read_analog_0);
 
 	System_Start();
 }

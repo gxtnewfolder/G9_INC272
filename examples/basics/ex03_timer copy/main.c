@@ -40,7 +40,7 @@ int main()
 
 	// Timer_Create(500, led0_toggle);
 
-	Timer_Create(800, led3_toggle);
+	Timer_Create(250, led3_toggle);
 
 	System_Start();
 }
