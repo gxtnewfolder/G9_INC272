@@ -73,11 +73,11 @@ c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-pic30-elf.a(data_in
 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\liblega-pic30-elf.a(crt_start_mode_normal.Leo)
                               (__crt_start_mode_normal)
 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(addsf3.eo)
-                              ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o) (___subsf3)
+                              ./output/objects/main.o (___subsf3)
 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(divsf3.eo)
                               ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_SysTick.o) (___divsf3)
 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(feqltle.eo)
-                              ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Beep.o) (___ltsf2)
+                              ./output/objects/main.o (___ltsf2)
 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(fgtge.eo)
                               ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Beep.o) (___gtsf2)
 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(fixunssfsi.eo)
@@ -97,7 +97,7 @@ c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(funpack2.eo)
 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(futil.eo)
                               c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(addsf3.eo) (__fPropagateNaN)
 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(mulsf3.eo)
-                              ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Beep.o) (___mulsf3)
+                              ./output/objects/main.o (___mulsf3)
 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(fcompare.eo)
                               c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(feqltle.eo) (__fcompare)
 c:/ecc-lab/embedded/compilers/xc16/bin/bin/../../lib\libm-elf.a(floatdisf.eo)
@@ -205,12 +205,12 @@ Default Scalar Model: Small
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0xc00              0x1fb6          0x2f91  (12177)
-.const                      0x2bb6                0xa6            0xf9  (249)
-.text                       0x2c5c              0x2154          0x31fe  (12798)
-.dinit                      0x4db0                0xf4           0x16e  (366)
-.text                       0x4ea4               0x170           0x228  (552)
+.const                      0x2bb6                0xc2           0x123  (291)
+.text                       0x2c78              0x2282          0x33c3  (13251)
+.dinit                      0x4efa                0xf4           0x16e  (366)
+.text                       0x4fee               0x138           0x1d4  (468)
 
-                 Total "program" memory used (bytes):         0x661e  (26142) 57%
+                 Total "program" memory used (bytes):         0x67b9  (26553) 58%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x2000]
@@ -354,237 +354,237 @@ External Symbols in Program Memory (by address):
                   0x002af2                  __dunpack
                   0x002b40                  ___floatdidf
                   0x002b60                  ___floatundidf
-                  0x002d64                  _Uart1_SetTxBuffer
-                  0x002d76                  _Uart1_SetRxBuffer
-                  0x002d88                  _Uart2_SetTxBuffer
-                  0x002d9a                  _Uart2_SetRxBuffer
-                  0x002dac                  _Uart1_Init
-                  0x002e88                  _Uart2_Init
-                  0x002f64                  _Uart_Init
-                  0x002f96                  _Uart1_Put
-                  0x002fae                  _Uart2_Put
-                  0x002fc6                  _Uart1_Get
-                  0x002fec                  _Uart2_Get
-                  0x003012                  _Uart1_Write
-                  0x003046                  _Uart2_Write
-                  0x00307a                  _Uart1_WriteBytes
-                  0x0030b6                  _Uart2_WriteBytes
-                  0x0030f2                  _Uart1_PutAsync
-                  0x003140                  _Uart2_PutAsync
-                  0x00318e                  _Uart1_WriteAsync
-                  0x00323c                  _Uart2_WriteAsync
-                  0x0032e8                  _Uart1_GetTxBufferSpace
-                  0x0032f8                  _Uart2_GetTxBufferSpace
-                  0x003308                  _Uart1_ClearTxBuffer
-                  0x003342                  _Uart2_ClearTxBuffer
-                  0x00337c                  _Uart1_ClearRxBuffer
-                  0x0033b6                  _Uart2_ClearRxBuffer
-                  0x0033f0                  _Uart1_Printf
-                  0x003436                  _Uart1_PrintfAsync
-                  0x00347c                  _Uart2_Printf
-                  0x0034c2                  _Uart2_PrintfAsync
-                  0x003508                  _Uart_Printf
-                  0x003562                  _Uart_PrintfAsync
-                  0x0035bc                  _Uart1_SetRxIsrCallback
-                  0x0035c8                  _Uart2_SetRxIsrCallback
-                  0x0035d4                  _Uart1_SetRxCallback
-                  0x0035e0                  _Uart2_SetRxCallback
-                  0x0035ec                  _Uart1_SetTxCallback
-                  0x0035f8                  _Uart2_SetTxCallback
-                  0x003640                  _Uart1_SetRxLineCallback
-                  0x003652                  _Uart2_SetRxLineCallback
-                  0x003664                  _Uart1_SetBufferFullCallback
-                  0x003670                  _Uart2_SetBufferFullCallback
-                  0x0037d0                  _Uart1_ClearLineBuffer
-                  0x003810                  _Uart2_ClearLineBuffer
-                  0x003850                  _Uart1_Executor
-                  0x003938                  _Uart2_Executor
-                  0x003be4                  _Psw_SetKeyDownCallback
-                  0x003c52                  _Psw_SetKeyHoldCallback
-                  0x003cc0                  _Psw_SetKeyLockCallback
-                  0x003d2e                  _Psw_SetKeyUpCallback
-                  0x003d9c                  _Psw_SetKeyChangedCallback
-                  0x003e0a                  _Psw_GetKeyState
-                  0x003e20                  _PSW_KeyTickedExecutor
-                  0x003ee0                  _Beep_Init
-                  0x003f48                  _Beep_SetFrequency
-                  0x004074                  _Beep_SetPower
-                  0x0040a6                  _Beep
-                  0x0040d6                  _Beep_Play
-                  0x0040ec                  _Beep_Generate
-                  0x00410c                  _Beep_SetCallback
-                  0x004118                  _BEEP_TickedExecutor
-                  0x0041a2                  _Led_Set
-                  0x0041d4                  _Led_Clr
-                  0x004206                  _Led_Wrt
-                  0x004262                  _Led_Inv
-                  0x004336                  _Led_Get
-                  0x00439a                  _Led_Write
-                  0x004412                  _Led_Read
-                  0x00444e                  _Led_BlinkInit
-                  0x00449c                  _Led_Flash
-                  0x0044ec                  _Led_Blink
-                  0x00453e                  _Led_Pwm
-                  0x0045a6                  _Led_SetChangedCallback
-                  0x0045be                  _Led_SetMode
-                  0x0045d6                  _LED_BlinkTickedExecutor
-                  0x0046ee                  _Adc_Init
-                  0x0047b8                  _Adc_Get
-                  0x0047fa                  _Adc_GetVoltage
-                  0x00482a                  _Adc_GetPercentage
-                  0x004852                  _Adc_SetChangedCallback
-                  0x00486a                  _Adc_SetChangedThreshold
-                  0x004882                  _Adc_SetChangedInterval
-                  0x00489a                  _ADC_TickedExecutor
-                  0x0049e2                  _Timer_Create
-                  0x004a40                  _Timer_SetInterval
-                  0x004a56                  _Timer_EndWaiting
-                  0x004a66                  _Timer_Delete
-                  0x004a98                  _Timer_TickedExecutor
-                  0x004b1c                  _Queue_Init
-                  0x004b66                  _Queue_Put
-                  0x004bc2                  _Queue_Get
-                  0x004c22                  _Queue_Space
-                  0x004c34                  _Queue_Reset
-                  0x004c6e                  _Sys_IsrPerformTick
-                  0x004cea                  _Sys_Start
-                  0x004cf2                  _Sys_Stop
-                  0x004cfa                  _Sys_SetTickCallback
-                  0x004d06                  _Sys_GetTicks
-                  0x004d10                  _Sys_GetTimeMilli
-                  0x004d34                  _Sys_GetTimeMicro
-                  0x004d5c                  _Sys_GetClock
-                  0x004d6c                  _Sys_SetClock
-                  0x004d92                  _Sys_TickInit
-                  0x004ea4                  _Psw_Get
-                  0x004f0e                  _Psw_Read
-                  0x004f1e                  _Mcu_IoInit
-                  0x004f40                  _Mcu_ClockInit
-                  0x004f5c                  _Mcu_UnlockRemap
-                  0x004f6e                  _Mcu_LockRemap
-                  0x004f80                  _Mcu_Init
-                  0x004f8a                  _read_analog_0
-                  0x004fa2                  _main
-                  0x004fc2                  _BSP_TickIsrExecutor
-                  0x004fce                  _BSP_Executor
-                  0x004ff0                  _RTL_TickIsrExecutor
-                  0x004ffc                  _RTL_Executor
+                  0x002d80                  _Uart1_SetTxBuffer
+                  0x002d92                  _Uart1_SetRxBuffer
+                  0x002da4                  _Uart2_SetTxBuffer
+                  0x002db6                  _Uart2_SetRxBuffer
+                  0x002dc8                  _Uart1_Init
+                  0x002ea4                  _Uart2_Init
+                  0x002f80                  _Uart_Init
+                  0x002fb2                  _Uart1_Put
+                  0x002fca                  _Uart2_Put
+                  0x002fe2                  _Uart1_Get
+                  0x003008                  _Uart2_Get
+                  0x00302e                  _Uart1_Write
+                  0x003062                  _Uart2_Write
+                  0x003096                  _Uart1_WriteBytes
+                  0x0030d2                  _Uart2_WriteBytes
+                  0x00310e                  _Uart1_PutAsync
+                  0x00315c                  _Uart2_PutAsync
+                  0x0031aa                  _Uart1_WriteAsync
+                  0x003258                  _Uart2_WriteAsync
+                  0x003304                  _Uart1_GetTxBufferSpace
+                  0x003314                  _Uart2_GetTxBufferSpace
+                  0x003324                  _Uart1_ClearTxBuffer
+                  0x00335e                  _Uart2_ClearTxBuffer
+                  0x003398                  _Uart1_ClearRxBuffer
+                  0x0033d2                  _Uart2_ClearRxBuffer
+                  0x00340c                  _Uart1_Printf
+                  0x003452                  _Uart1_PrintfAsync
+                  0x003498                  _Uart2_Printf
+                  0x0034de                  _Uart2_PrintfAsync
+                  0x003524                  _Uart_Printf
+                  0x00357e                  _Uart_PrintfAsync
+                  0x0035d8                  _Uart1_SetRxIsrCallback
+                  0x0035e4                  _Uart2_SetRxIsrCallback
+                  0x0035f0                  _Uart1_SetRxCallback
+                  0x0035fc                  _Uart2_SetRxCallback
+                  0x003608                  _Uart1_SetTxCallback
+                  0x003614                  _Uart2_SetTxCallback
+                  0x00365c                  _Uart1_SetRxLineCallback
+                  0x00366e                  _Uart2_SetRxLineCallback
+                  0x003680                  _Uart1_SetBufferFullCallback
+                  0x00368c                  _Uart2_SetBufferFullCallback
+                  0x0037ec                  _Uart1_ClearLineBuffer
+                  0x00382c                  _Uart2_ClearLineBuffer
+                  0x00386c                  _Uart1_Executor
+                  0x003954                  _Uart2_Executor
+                  0x003c00                  _Psw_SetKeyDownCallback
+                  0x003c6e                  _Psw_SetKeyHoldCallback
+                  0x003cdc                  _Psw_SetKeyLockCallback
+                  0x003d4a                  _Psw_SetKeyUpCallback
+                  0x003db8                  _Psw_SetKeyChangedCallback
+                  0x003e26                  _Psw_GetKeyState
+                  0x003e3c                  _PSW_KeyTickedExecutor
+                  0x003efc                  _Beep_Init
+                  0x003f64                  _Beep_SetFrequency
+                  0x004090                  _Beep_SetPower
+                  0x0040c2                  _Beep
+                  0x0040f2                  _Beep_Play
+                  0x004108                  _Beep_Generate
+                  0x004128                  _Beep_SetCallback
+                  0x004134                  _BEEP_TickedExecutor
+                  0x0041be                  _Led_Set
+                  0x0041f0                  _Led_Clr
+                  0x004222                  _Led_Wrt
+                  0x00427e                  _Led_Inv
+                  0x004352                  _Led_Get
+                  0x0043b6                  _Led_Write
+                  0x00442e                  _Led_Read
+                  0x00446a                  _Led_BlinkInit
+                  0x0044b8                  _Led_Flash
+                  0x004508                  _Led_Blink
+                  0x00455a                  _Led_Pwm
+                  0x0045c2                  _Led_SetChangedCallback
+                  0x0045da                  _Led_SetMode
+                  0x0045f2                  _LED_BlinkTickedExecutor
+                  0x00470a                  _Adc_Init
+                  0x0047d4                  _Adc_Get
+                  0x004816                  _Adc_GetVoltage
+                  0x004846                  _Adc_GetPercentage
+                  0x00486e                  _Adc_SetChangedCallback
+                  0x004886                  _Adc_SetChangedThreshold
+                  0x00489e                  _Adc_SetChangedInterval
+                  0x0048b6                  _ADC_TickedExecutor
+                  0x0049fe                  _Timer_Create
+                  0x004a5c                  _Timer_SetInterval
+                  0x004a72                  _Timer_EndWaiting
+                  0x004a82                  _Timer_Delete
+                  0x004ab4                  _Timer_TickedExecutor
+                  0x004b38                  _Queue_Init
+                  0x004b82                  _Queue_Put
+                  0x004bde                  _Queue_Get
+                  0x004c3e                  _Queue_Space
+                  0x004c50                  _Queue_Reset
+                  0x004c8a                  _Sys_IsrPerformTick
+                  0x004d06                  _Sys_Start
+                  0x004d0e                  _Sys_Stop
+                  0x004d16                  _Sys_SetTickCallback
+                  0x004d22                  _Sys_GetTicks
+                  0x004d2c                  _Sys_GetTimeMilli
+                  0x004d50                  _Sys_GetTimeMicro
+                  0x004d78                  _Sys_GetClock
+                  0x004d88                  _Sys_SetClock
+                  0x004dae                  _Sys_TickInit
+                  0x004dcc                  _read_analog_0
+                  0x004eda                  _main
+                  0x004fee                  _Psw_Get
+                  0x005058                  _Psw_Read
+                  0x005068                  _Mcu_IoInit
+                  0x00508a                  _Mcu_ClockInit
+                  0x0050a6                  _Mcu_UnlockRemap
+                  0x0050b8                  _Mcu_LockRemap
+                  0x0050ca                  _Mcu_Init
+                  0x0050d4                  _BSP_TickIsrExecutor
+                  0x0050e0                  _BSP_Executor
+                  0x005102                  _RTL_TickIsrExecutor
+                  0x00510e                  _RTL_Executor
 
 External Symbols in Program Memory (by name):
 
-                  0x00489a                  _ADC_TickedExecutor
-                  0x0047b8                  _Adc_Get
-                  0x00482a                  _Adc_GetPercentage
-                  0x0047fa                  _Adc_GetVoltage
-                  0x0046ee                  _Adc_Init
-                  0x004852                  _Adc_SetChangedCallback
-                  0x004882                  _Adc_SetChangedInterval
-                  0x00486a                  _Adc_SetChangedThreshold
-                  0x004118                  _BEEP_TickedExecutor
-                  0x004fce                  _BSP_Executor
-                  0x004fc2                  _BSP_TickIsrExecutor
-                  0x0040a6                  _Beep
-                  0x0040ec                  _Beep_Generate
-                  0x003ee0                  _Beep_Init
-                  0x0040d6                  _Beep_Play
-                  0x00410c                  _Beep_SetCallback
-                  0x003f48                  _Beep_SetFrequency
-                  0x004074                  _Beep_SetPower
-                  0x0045d6                  _LED_BlinkTickedExecutor
-                  0x0044ec                  _Led_Blink
-                  0x00444e                  _Led_BlinkInit
-                  0x0041d4                  _Led_Clr
-                  0x00449c                  _Led_Flash
-                  0x004336                  _Led_Get
-                  0x004262                  _Led_Inv
-                  0x00453e                  _Led_Pwm
-                  0x004412                  _Led_Read
-                  0x0041a2                  _Led_Set
-                  0x0045a6                  _Led_SetChangedCallback
-                  0x0045be                  _Led_SetMode
-                  0x00439a                  _Led_Write
-                  0x004206                  _Led_Wrt
-                  0x004f40                  _Mcu_ClockInit
-                  0x004f80                  _Mcu_Init
-                  0x004f1e                  _Mcu_IoInit
-                  0x004f6e                  _Mcu_LockRemap
-                  0x004f5c                  _Mcu_UnlockRemap
-                  0x003e20                  _PSW_KeyTickedExecutor
-                  0x004ea4                  _Psw_Get
-                  0x003e0a                  _Psw_GetKeyState
-                  0x004f0e                  _Psw_Read
-                  0x003d9c                  _Psw_SetKeyChangedCallback
-                  0x003be4                  _Psw_SetKeyDownCallback
-                  0x003c52                  _Psw_SetKeyHoldCallback
-                  0x003cc0                  _Psw_SetKeyLockCallback
-                  0x003d2e                  _Psw_SetKeyUpCallback
-                  0x004bc2                  _Queue_Get
-                  0x004b1c                  _Queue_Init
-                  0x004b66                  _Queue_Put
-                  0x004c34                  _Queue_Reset
-                  0x004c22                  _Queue_Space
-                  0x004ffc                  _RTL_Executor
-                  0x004ff0                  _RTL_TickIsrExecutor
-                  0x004d5c                  _Sys_GetClock
-                  0x004d06                  _Sys_GetTicks
-                  0x004d34                  _Sys_GetTimeMicro
-                  0x004d10                  _Sys_GetTimeMilli
-                  0x004c6e                  _Sys_IsrPerformTick
-                  0x004d6c                  _Sys_SetClock
-                  0x004cfa                  _Sys_SetTickCallback
-                  0x004cea                  _Sys_Start
-                  0x004cf2                  _Sys_Stop
-                  0x004d92                  _Sys_TickInit
-                  0x0049e2                  _Timer_Create
-                  0x004a66                  _Timer_Delete
-                  0x004a56                  _Timer_EndWaiting
-                  0x004a40                  _Timer_SetInterval
-                  0x004a98                  _Timer_TickedExecutor
-                  0x0037d0                  _Uart1_ClearLineBuffer
-                  0x00337c                  _Uart1_ClearRxBuffer
-                  0x003308                  _Uart1_ClearTxBuffer
-                  0x003850                  _Uart1_Executor
-                  0x002fc6                  _Uart1_Get
-                  0x0032e8                  _Uart1_GetTxBufferSpace
-                  0x002dac                  _Uart1_Init
-                  0x0033f0                  _Uart1_Printf
-                  0x003436                  _Uart1_PrintfAsync
-                  0x002f96                  _Uart1_Put
-                  0x0030f2                  _Uart1_PutAsync
-                  0x003664                  _Uart1_SetBufferFullCallback
-                  0x002d76                  _Uart1_SetRxBuffer
-                  0x0035d4                  _Uart1_SetRxCallback
-                  0x0035bc                  _Uart1_SetRxIsrCallback
-                  0x003640                  _Uart1_SetRxLineCallback
-                  0x002d64                  _Uart1_SetTxBuffer
-                  0x0035ec                  _Uart1_SetTxCallback
-                  0x003012                  _Uart1_Write
-                  0x00318e                  _Uart1_WriteAsync
-                  0x00307a                  _Uart1_WriteBytes
-                  0x003810                  _Uart2_ClearLineBuffer
-                  0x0033b6                  _Uart2_ClearRxBuffer
-                  0x003342                  _Uart2_ClearTxBuffer
-                  0x003938                  _Uart2_Executor
-                  0x002fec                  _Uart2_Get
-                  0x0032f8                  _Uart2_GetTxBufferSpace
-                  0x002e88                  _Uart2_Init
-                  0x00347c                  _Uart2_Printf
-                  0x0034c2                  _Uart2_PrintfAsync
-                  0x002fae                  _Uart2_Put
-                  0x003140                  _Uart2_PutAsync
-                  0x003670                  _Uart2_SetBufferFullCallback
-                  0x002d9a                  _Uart2_SetRxBuffer
-                  0x0035e0                  _Uart2_SetRxCallback
-                  0x0035c8                  _Uart2_SetRxIsrCallback
-                  0x003652                  _Uart2_SetRxLineCallback
-                  0x002d88                  _Uart2_SetTxBuffer
-                  0x0035f8                  _Uart2_SetTxCallback
-                  0x003046                  _Uart2_Write
-                  0x00323c                  _Uart2_WriteAsync
-                  0x0030b6                  _Uart2_WriteBytes
-                  0x002f64                  _Uart_Init
-                  0x003508                  _Uart_Printf
-                  0x003562                  _Uart_PrintfAsync
+                  0x0048b6                  _ADC_TickedExecutor
+                  0x0047d4                  _Adc_Get
+                  0x004846                  _Adc_GetPercentage
+                  0x004816                  _Adc_GetVoltage
+                  0x00470a                  _Adc_Init
+                  0x00486e                  _Adc_SetChangedCallback
+                  0x00489e                  _Adc_SetChangedInterval
+                  0x004886                  _Adc_SetChangedThreshold
+                  0x004134                  _BEEP_TickedExecutor
+                  0x0050e0                  _BSP_Executor
+                  0x0050d4                  _BSP_TickIsrExecutor
+                  0x0040c2                  _Beep
+                  0x004108                  _Beep_Generate
+                  0x003efc                  _Beep_Init
+                  0x0040f2                  _Beep_Play
+                  0x004128                  _Beep_SetCallback
+                  0x003f64                  _Beep_SetFrequency
+                  0x004090                  _Beep_SetPower
+                  0x0045f2                  _LED_BlinkTickedExecutor
+                  0x004508                  _Led_Blink
+                  0x00446a                  _Led_BlinkInit
+                  0x0041f0                  _Led_Clr
+                  0x0044b8                  _Led_Flash
+                  0x004352                  _Led_Get
+                  0x00427e                  _Led_Inv
+                  0x00455a                  _Led_Pwm
+                  0x00442e                  _Led_Read
+                  0x0041be                  _Led_Set
+                  0x0045c2                  _Led_SetChangedCallback
+                  0x0045da                  _Led_SetMode
+                  0x0043b6                  _Led_Write
+                  0x004222                  _Led_Wrt
+                  0x00508a                  _Mcu_ClockInit
+                  0x0050ca                  _Mcu_Init
+                  0x005068                  _Mcu_IoInit
+                  0x0050b8                  _Mcu_LockRemap
+                  0x0050a6                  _Mcu_UnlockRemap
+                  0x003e3c                  _PSW_KeyTickedExecutor
+                  0x004fee                  _Psw_Get
+                  0x003e26                  _Psw_GetKeyState
+                  0x005058                  _Psw_Read
+                  0x003db8                  _Psw_SetKeyChangedCallback
+                  0x003c00                  _Psw_SetKeyDownCallback
+                  0x003c6e                  _Psw_SetKeyHoldCallback
+                  0x003cdc                  _Psw_SetKeyLockCallback
+                  0x003d4a                  _Psw_SetKeyUpCallback
+                  0x004bde                  _Queue_Get
+                  0x004b38                  _Queue_Init
+                  0x004b82                  _Queue_Put
+                  0x004c50                  _Queue_Reset
+                  0x004c3e                  _Queue_Space
+                  0x00510e                  _RTL_Executor
+                  0x005102                  _RTL_TickIsrExecutor
+                  0x004d78                  _Sys_GetClock
+                  0x004d22                  _Sys_GetTicks
+                  0x004d50                  _Sys_GetTimeMicro
+                  0x004d2c                  _Sys_GetTimeMilli
+                  0x004c8a                  _Sys_IsrPerformTick
+                  0x004d88                  _Sys_SetClock
+                  0x004d16                  _Sys_SetTickCallback
+                  0x004d06                  _Sys_Start
+                  0x004d0e                  _Sys_Stop
+                  0x004dae                  _Sys_TickInit
+                  0x0049fe                  _Timer_Create
+                  0x004a82                  _Timer_Delete
+                  0x004a72                  _Timer_EndWaiting
+                  0x004a5c                  _Timer_SetInterval
+                  0x004ab4                  _Timer_TickedExecutor
+                  0x0037ec                  _Uart1_ClearLineBuffer
+                  0x003398                  _Uart1_ClearRxBuffer
+                  0x003324                  _Uart1_ClearTxBuffer
+                  0x00386c                  _Uart1_Executor
+                  0x002fe2                  _Uart1_Get
+                  0x003304                  _Uart1_GetTxBufferSpace
+                  0x002dc8                  _Uart1_Init
+                  0x00340c                  _Uart1_Printf
+                  0x003452                  _Uart1_PrintfAsync
+                  0x002fb2                  _Uart1_Put
+                  0x00310e                  _Uart1_PutAsync
+                  0x003680                  _Uart1_SetBufferFullCallback
+                  0x002d92                  _Uart1_SetRxBuffer
+                  0x0035f0                  _Uart1_SetRxCallback
+                  0x0035d8                  _Uart1_SetRxIsrCallback
+                  0x00365c                  _Uart1_SetRxLineCallback
+                  0x002d80                  _Uart1_SetTxBuffer
+                  0x003608                  _Uart1_SetTxCallback
+                  0x00302e                  _Uart1_Write
+                  0x0031aa                  _Uart1_WriteAsync
+                  0x003096                  _Uart1_WriteBytes
+                  0x00382c                  _Uart2_ClearLineBuffer
+                  0x0033d2                  _Uart2_ClearRxBuffer
+                  0x00335e                  _Uart2_ClearTxBuffer
+                  0x003954                  _Uart2_Executor
+                  0x003008                  _Uart2_Get
+                  0x003314                  _Uart2_GetTxBufferSpace
+                  0x002ea4                  _Uart2_Init
+                  0x003498                  _Uart2_Printf
+                  0x0034de                  _Uart2_PrintfAsync
+                  0x002fca                  _Uart2_Put
+                  0x00315c                  _Uart2_PutAsync
+                  0x00368c                  _Uart2_SetBufferFullCallback
+                  0x002db6                  _Uart2_SetRxBuffer
+                  0x0035fc                  _Uart2_SetRxCallback
+                  0x0035e4                  _Uart2_SetRxIsrCallback
+                  0x00366e                  _Uart2_SetRxLineCallback
+                  0x002da4                  _Uart2_SetTxBuffer
+                  0x003614                  _Uart2_SetTxCallback
+                  0x003062                  _Uart2_Write
+                  0x003258                  _Uart2_WriteAsync
+                  0x0030d2                  _Uart2_WriteBytes
+                  0x002f80                  _Uart_Init
+                  0x003524                  _Uart_Printf
+                  0x00357e                  _Uart_PrintfAsync
                   0x000cfc                  __ADC1Interrupt
                   0x000e64                  __DefaultInterrupt
                   0x002028                  __Dnorm
@@ -665,11 +665,11 @@ External Symbols in Program Memory (by name):
                   0x002418                  _div
                   0x0011fa                  _free
                   0x001ffe                  _ldiv
-                  0x004fa2                  _main
+                  0x004eda                  _main
                   0x0012c4                  _malloc
                   0x0017c0                  _memchr
                   0x0017d4                  _memcpy
-                  0x004f8a                  _read_analog_0
+                  0x004dcc                  _read_analog_0
                   0x00179e                  _strchr
                   0x001318                  _strlen
                   0x001346                  _vsprintf
@@ -935,22 +935,22 @@ __CONFIG1
 .comment
  *(.comment)
 
-.debug_info       0x000000       0x7363
+.debug_info       0x000000       0x7370
  *(.debug_info)
- .debug_info      0x000000        0x356 ./output/objects/main.o
- .debug_info      0x000356        0x1c7 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Main.o)
- .debug_info      0x00051d        0x446 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Mcu.o)
- .debug_info      0x000963        0x64b ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_SysTick.o)
- .debug_info      0x000fae        0x61f ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_PswKey.o)
- .debug_info      0x0015cd        0xa50 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Beep.o)
- .debug_info      0x00201d        0xf1a ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Adc.o)
- .debug_info      0x002f37        0x4db ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_LedBlink.o)
- .debug_info      0x003412        0x706 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Led.o)
- .debug_info      0x003b18        0x350 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Psw.o)
- .debug_info      0x003e68       0x2b8a ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
- .debug_info      0x0069f2        0x322 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Queue.o)
- .debug_info      0x006d14        0x1b5 ../../../library/RTL/dist/libs/ecc-pic24-rtl.a(RTL_Main.o)
- .debug_info      0x006ec9        0x49a ../../../library/RTL/dist/libs/ecc-pic24-rtl.a(RTL_Timer.o)
+ .debug_info      0x000000        0x363 ./output/objects/main.o
+ .debug_info      0x000363        0x1c7 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Main.o)
+ .debug_info      0x00052a        0x446 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Mcu.o)
+ .debug_info      0x000970        0x64b ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_SysTick.o)
+ .debug_info      0x000fbb        0x61f ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_PswKey.o)
+ .debug_info      0x0015da        0xa50 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Beep.o)
+ .debug_info      0x00202a        0xf1a ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Adc.o)
+ .debug_info      0x002f44        0x4db ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_LedBlink.o)
+ .debug_info      0x00341f        0x706 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Led.o)
+ .debug_info      0x003b25        0x350 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Psw.o)
+ .debug_info      0x003e75       0x2b8a ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
+ .debug_info      0x0069ff        0x322 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Queue.o)
+ .debug_info      0x006d21        0x1b5 ../../../library/RTL/dist/libs/ecc-pic24-rtl.a(RTL_Main.o)
+ .debug_info      0x006ed6        0x49a ../../../library/RTL/dist/libs/ecc-pic24-rtl.a(RTL_Timer.o)
  *(.gnu.linkonce.wi.*)
 
 .debug_abbrev     0x000000        0xefd
@@ -970,39 +970,39 @@ __CONFIG1
  .debug_abbrev    0x000db2         0x50 ../../../library/RTL/dist/libs/ecc-pic24-rtl.a(RTL_Main.o)
  .debug_abbrev    0x000e02         0xfb ../../../library/RTL/dist/libs/ecc-pic24-rtl.a(RTL_Timer.o)
 
-.debug_line       0x000000       0x11b0
+.debug_line       0x000000       0x11c2
  *(.debug_line)
- .debug_line      0x000000        0x11f ./output/objects/main.o
- .debug_line      0x00011f         0xa1 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Main.o)
- .debug_line      0x0001c0        0x103 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Mcu.o)
- .debug_line      0x0002c3        0x144 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_SysTick.o)
- .debug_line      0x000407        0x150 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_PswKey.o)
- .debug_line      0x000557        0x17e ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Beep.o)
- .debug_line      0x0006d5        0x18d ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Adc.o)
- .debug_line      0x000862        0x11b ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_LedBlink.o)
- .debug_line      0x00097d        0x12a ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Led.o)
- .debug_line      0x000aa7         0xed ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Psw.o)
- .debug_line      0x000b94        0x38d ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
- .debug_line      0x000f21         0xd8 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Queue.o)
- .debug_line      0x000ff9         0x98 ../../../library/RTL/dist/libs/ecc-pic24-rtl.a(RTL_Main.o)
- .debug_line      0x001091        0x11f ../../../library/RTL/dist/libs/ecc-pic24-rtl.a(RTL_Timer.o)
+ .debug_line      0x000000        0x131 ./output/objects/main.o
+ .debug_line      0x000131         0xa1 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Main.o)
+ .debug_line      0x0001d2        0x103 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Mcu.o)
+ .debug_line      0x0002d5        0x144 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_SysTick.o)
+ .debug_line      0x000419        0x150 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_PswKey.o)
+ .debug_line      0x000569        0x17e ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Beep.o)
+ .debug_line      0x0006e7        0x18d ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Adc.o)
+ .debug_line      0x000874        0x11b ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_LedBlink.o)
+ .debug_line      0x00098f        0x12a ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Led.o)
+ .debug_line      0x000ab9         0xed ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Psw.o)
+ .debug_line      0x000ba6        0x38d ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
+ .debug_line      0x000f33         0xd8 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Queue.o)
+ .debug_line      0x00100b         0x98 ../../../library/RTL/dist/libs/ecc-pic24-rtl.a(RTL_Main.o)
+ .debug_line      0x0010a3        0x11f ../../../library/RTL/dist/libs/ecc-pic24-rtl.a(RTL_Timer.o)
 
-.debug_frame      0x000000        0xef2
+.debug_frame      0x000000        0xef8
  *(.debug_frame)
- .debug_frame     0x000000         0x96 ./output/objects/main.o
- .debug_frame     0x000096         0x48 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Main.o)
- .debug_frame     0x0000de         0x96 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Mcu.o)
- .debug_frame     0x000174        0x120 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_SysTick.o)
- .debug_frame     0x000294         0xfe ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_PswKey.o)
- .debug_frame     0x000392        0x102 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Beep.o)
- .debug_frame     0x000494        0x108 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Adc.o)
- .debug_frame     0x00059c         0xca ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_LedBlink.o)
- .debug_frame     0x000666         0xca ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Led.o)
- .debug_frame     0x000730         0x48 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Psw.o)
- .debug_frame     0x000778        0x5d2 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
- .debug_frame     0x000d4a         0x96 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Queue.o)
- .debug_frame     0x000de0         0x48 ../../../library/RTL/dist/libs/ecc-pic24-rtl.a(RTL_Main.o)
- .debug_frame     0x000e28         0xca ../../../library/RTL/dist/libs/ecc-pic24-rtl.a(RTL_Timer.o)
+ .debug_frame     0x000000         0x9c ./output/objects/main.o
+ .debug_frame     0x00009c         0x48 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Main.o)
+ .debug_frame     0x0000e4         0x96 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Mcu.o)
+ .debug_frame     0x00017a        0x120 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_SysTick.o)
+ .debug_frame     0x00029a         0xfe ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_PswKey.o)
+ .debug_frame     0x000398        0x102 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Beep.o)
+ .debug_frame     0x00049a        0x108 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Adc.o)
+ .debug_frame     0x0005a2         0xca ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_LedBlink.o)
+ .debug_frame     0x00066c         0xca ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Led.o)
+ .debug_frame     0x000736         0x48 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Psw.o)
+ .debug_frame     0x00077e        0x5d2 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
+ .debug_frame     0x000d50         0x96 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Queue.o)
+ .debug_frame     0x000de6         0x48 ../../../library/RTL/dist/libs/ecc-pic24-rtl.a(RTL_Main.o)
+ .debug_frame     0x000e2e         0xca ../../../library/RTL/dist/libs/ecc-pic24-rtl.a(RTL_Timer.o)
 
 .debug_str        0x000000        0x28f
  *(.debug_str)
@@ -2201,144 +2201,144 @@ __c30_signature
  .ivt._U2TXInterrupt
                     0x0052          0x2 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
 
-.const              0xabb6         0xa6 load address 0x002bb6  
+.const              0xabb6         0xc2 load address 0x002bb6  
  .const             0xabb6         0x44 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
  .const             0xabfa         0x2c ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Beep.o)
  .const             0xac26         0x2a ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_PswKey.o)
- .const             0xac50          0xc ./output/objects/main.o
+ .const             0xac50         0x28 ./output/objects/main.o
 
-.text             0x002c5c       0x2154
- .text            0x002c5c        0xdce ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
-                  0x002d64                  _Uart1_SetTxBuffer
-                  0x002d76                  _Uart1_SetRxBuffer
-                  0x002d88                  _Uart2_SetTxBuffer
-                  0x002d9a                  _Uart2_SetRxBuffer
-                  0x002dac                  _Uart1_Init
-                  0x002e88                  _Uart2_Init
-                  0x002f64                  _Uart_Init
-                  0x002f96                  _Uart1_Put
-                  0x002fae                  _Uart2_Put
-                  0x002fc6                  _Uart1_Get
-                  0x002fec                  _Uart2_Get
-                  0x003012                  _Uart1_Write
-                  0x003046                  _Uart2_Write
-                  0x00307a                  _Uart1_WriteBytes
-                  0x0030b6                  _Uart2_WriteBytes
-                  0x0030f2                  _Uart1_PutAsync
-                  0x003140                  _Uart2_PutAsync
-                  0x00318e                  _Uart1_WriteAsync
-                  0x00323c                  _Uart2_WriteAsync
-                  0x0032e8                  _Uart1_GetTxBufferSpace
-                  0x0032f8                  _Uart2_GetTxBufferSpace
-                  0x003308                  _Uart1_ClearTxBuffer
-                  0x003342                  _Uart2_ClearTxBuffer
-                  0x00337c                  _Uart1_ClearRxBuffer
-                  0x0033b6                  _Uart2_ClearRxBuffer
-                  0x0033f0                  _Uart1_Printf
-                  0x003436                  _Uart1_PrintfAsync
-                  0x00347c                  _Uart2_Printf
-                  0x0034c2                  _Uart2_PrintfAsync
-                  0x003508                  _Uart_Printf
-                  0x003562                  _Uart_PrintfAsync
-                  0x0035bc                  _Uart1_SetRxIsrCallback
-                  0x0035c8                  _Uart2_SetRxIsrCallback
-                  0x0035d4                  _Uart1_SetRxCallback
-                  0x0035e0                  _Uart2_SetRxCallback
-                  0x0035ec                  _Uart1_SetTxCallback
-                  0x0035f8                  _Uart2_SetTxCallback
-                  0x003640                  _Uart1_SetRxLineCallback
-                  0x003652                  _Uart2_SetRxLineCallback
-                  0x003664                  _Uart1_SetBufferFullCallback
-                  0x003670                  _Uart2_SetBufferFullCallback
-                  0x0037d0                  _Uart1_ClearLineBuffer
-                  0x003810                  _Uart2_ClearLineBuffer
-                  0x003850                  _Uart1_Executor
-                  0x003938                  _Uart2_Executor
- .text            0x003a2a        0x4b6 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_PswKey.o)
-                  0x003be4                  _Psw_SetKeyDownCallback
-                  0x003c52                  _Psw_SetKeyHoldCallback
-                  0x003cc0                  _Psw_SetKeyLockCallback
-                  0x003d2e                  _Psw_SetKeyUpCallback
-                  0x003d9c                  _Psw_SetKeyChangedCallback
-                  0x003e0a                  _Psw_GetKeyState
-                  0x003e20                  _PSW_KeyTickedExecutor
- .text            0x003ee0        0x2c2 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Beep.o)
-                  0x003ee0                  _Beep_Init
-                  0x003f48                  _Beep_SetFrequency
-                  0x004074                  _Beep_SetPower
-                  0x0040a6                  _Beep
-                  0x0040d6                  _Beep_Play
-                  0x0040ec                  _Beep_Generate
-                  0x00410c                  _Beep_SetCallback
-                  0x004118                  _BEEP_TickedExecutor
- .text            0x0041a2        0x2ac ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Led.o)
-                  0x0041a2                  _Led_Set
-                  0x0041d4                  _Led_Clr
-                  0x004206                  _Led_Wrt
-                  0x004262                  _Led_Inv
-                  0x004336                  _Led_Get
-                  0x00439a                  _Led_Write
-                  0x004412                  _Led_Read
- .text            0x00444e        0x2a0 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_LedBlink.o)
-                  0x00444e                  _Led_BlinkInit
-                  0x00449c                  _Led_Flash
-                  0x0044ec                  _Led_Blink
-                  0x00453e                  _Led_Pwm
-                  0x0045a6                  _Led_SetChangedCallback
-                  0x0045be                  _Led_SetMode
-                  0x0045d6                  _LED_BlinkTickedExecutor
- .text            0x0046ee        0x28a ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Adc.o)
-                  0x0046ee                  _Adc_Init
-                  0x0047b8                  _Adc_Get
-                  0x0047fa                  _Adc_GetVoltage
-                  0x00482a                  _Adc_GetPercentage
-                  0x004852                  _Adc_SetChangedCallback
-                  0x00486a                  _Adc_SetChangedThreshold
-                  0x004882                  _Adc_SetChangedInterval
-                  0x00489a                  _ADC_TickedExecutor
- .text            0x004978        0x1a4 ../../../library/RTL/dist/libs/ecc-pic24-rtl.a(RTL_Timer.o)
-                  0x0049e2                  _Timer_Create
-                  0x004a40                  _Timer_SetInterval
-                  0x004a56                  _Timer_EndWaiting
-                  0x004a66                  _Timer_Delete
-                  0x004a98                  _Timer_TickedExecutor
- .text            0x004b1c        0x152 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Queue.o)
-                  0x004b1c                  _Queue_Init
-                  0x004b66                  _Queue_Put
-                  0x004bc2                  _Queue_Get
-                  0x004c22                  _Queue_Space
-                  0x004c34                  _Queue_Reset
- .text            0x004c6e        0x142 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_SysTick.o)
-                  0x004c6e                  _Sys_IsrPerformTick
-                  0x004cea                  _Sys_Start
-                  0x004cf2                  _Sys_Stop
-                  0x004cfa                  _Sys_SetTickCallback
-                  0x004d06                  _Sys_GetTicks
-                  0x004d10                  _Sys_GetTimeMilli
-                  0x004d34                  _Sys_GetTimeMicro
-                  0x004d5c                  _Sys_GetClock
-                  0x004d6c                  _Sys_SetClock
-                  0x004d92                  _Sys_TickInit
+.text             0x002c78       0x2282
+ .text            0x002c78        0xdce ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Uart.o)
+                  0x002d80                  _Uart1_SetTxBuffer
+                  0x002d92                  _Uart1_SetRxBuffer
+                  0x002da4                  _Uart2_SetTxBuffer
+                  0x002db6                  _Uart2_SetRxBuffer
+                  0x002dc8                  _Uart1_Init
+                  0x002ea4                  _Uart2_Init
+                  0x002f80                  _Uart_Init
+                  0x002fb2                  _Uart1_Put
+                  0x002fca                  _Uart2_Put
+                  0x002fe2                  _Uart1_Get
+                  0x003008                  _Uart2_Get
+                  0x00302e                  _Uart1_Write
+                  0x003062                  _Uart2_Write
+                  0x003096                  _Uart1_WriteBytes
+                  0x0030d2                  _Uart2_WriteBytes
+                  0x00310e                  _Uart1_PutAsync
+                  0x00315c                  _Uart2_PutAsync
+                  0x0031aa                  _Uart1_WriteAsync
+                  0x003258                  _Uart2_WriteAsync
+                  0x003304                  _Uart1_GetTxBufferSpace
+                  0x003314                  _Uart2_GetTxBufferSpace
+                  0x003324                  _Uart1_ClearTxBuffer
+                  0x00335e                  _Uart2_ClearTxBuffer
+                  0x003398                  _Uart1_ClearRxBuffer
+                  0x0033d2                  _Uart2_ClearRxBuffer
+                  0x00340c                  _Uart1_Printf
+                  0x003452                  _Uart1_PrintfAsync
+                  0x003498                  _Uart2_Printf
+                  0x0034de                  _Uart2_PrintfAsync
+                  0x003524                  _Uart_Printf
+                  0x00357e                  _Uart_PrintfAsync
+                  0x0035d8                  _Uart1_SetRxIsrCallback
+                  0x0035e4                  _Uart2_SetRxIsrCallback
+                  0x0035f0                  _Uart1_SetRxCallback
+                  0x0035fc                  _Uart2_SetRxCallback
+                  0x003608                  _Uart1_SetTxCallback
+                  0x003614                  _Uart2_SetTxCallback
+                  0x00365c                  _Uart1_SetRxLineCallback
+                  0x00366e                  _Uart2_SetRxLineCallback
+                  0x003680                  _Uart1_SetBufferFullCallback
+                  0x00368c                  _Uart2_SetBufferFullCallback
+                  0x0037ec                  _Uart1_ClearLineBuffer
+                  0x00382c                  _Uart2_ClearLineBuffer
+                  0x00386c                  _Uart1_Executor
+                  0x003954                  _Uart2_Executor
+ .text            0x003a46        0x4b6 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_PswKey.o)
+                  0x003c00                  _Psw_SetKeyDownCallback
+                  0x003c6e                  _Psw_SetKeyHoldCallback
+                  0x003cdc                  _Psw_SetKeyLockCallback
+                  0x003d4a                  _Psw_SetKeyUpCallback
+                  0x003db8                  _Psw_SetKeyChangedCallback
+                  0x003e26                  _Psw_GetKeyState
+                  0x003e3c                  _PSW_KeyTickedExecutor
+ .text            0x003efc        0x2c2 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Beep.o)
+                  0x003efc                  _Beep_Init
+                  0x003f64                  _Beep_SetFrequency
+                  0x004090                  _Beep_SetPower
+                  0x0040c2                  _Beep
+                  0x0040f2                  _Beep_Play
+                  0x004108                  _Beep_Generate
+                  0x004128                  _Beep_SetCallback
+                  0x004134                  _BEEP_TickedExecutor
+ .text            0x0041be        0x2ac ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Led.o)
+                  0x0041be                  _Led_Set
+                  0x0041f0                  _Led_Clr
+                  0x004222                  _Led_Wrt
+                  0x00427e                  _Led_Inv
+                  0x004352                  _Led_Get
+                  0x0043b6                  _Led_Write
+                  0x00442e                  _Led_Read
+ .text            0x00446a        0x2a0 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_LedBlink.o)
+                  0x00446a                  _Led_BlinkInit
+                  0x0044b8                  _Led_Flash
+                  0x004508                  _Led_Blink
+                  0x00455a                  _Led_Pwm
+                  0x0045c2                  _Led_SetChangedCallback
+                  0x0045da                  _Led_SetMode
+                  0x0045f2                  _LED_BlinkTickedExecutor
+ .text            0x00470a        0x28a ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Adc.o)
+                  0x00470a                  _Adc_Init
+                  0x0047d4                  _Adc_Get
+                  0x004816                  _Adc_GetVoltage
+                  0x004846                  _Adc_GetPercentage
+                  0x00486e                  _Adc_SetChangedCallback
+                  0x004886                  _Adc_SetChangedThreshold
+                  0x00489e                  _Adc_SetChangedInterval
+                  0x0048b6                  _ADC_TickedExecutor
+ .text            0x004994        0x1a4 ../../../library/RTL/dist/libs/ecc-pic24-rtl.a(RTL_Timer.o)
+                  0x0049fe                  _Timer_Create
+                  0x004a5c                  _Timer_SetInterval
+                  0x004a72                  _Timer_EndWaiting
+                  0x004a82                  _Timer_Delete
+                  0x004ab4                  _Timer_TickedExecutor
+ .text            0x004b38        0x152 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Queue.o)
+                  0x004b38                  _Queue_Init
+                  0x004b82                  _Queue_Put
+                  0x004bde                  _Queue_Get
+                  0x004c3e                  _Queue_Space
+                  0x004c50                  _Queue_Reset
+ .text            0x004c8a        0x142 ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_SysTick.o)
+                  0x004c8a                  _Sys_IsrPerformTick
+                  0x004d06                  _Sys_Start
+                  0x004d0e                  _Sys_Stop
+                  0x004d16                  _Sys_SetTickCallback
+                  0x004d22                  _Sys_GetTicks
+                  0x004d2c                  _Sys_GetTimeMilli
+                  0x004d50                  _Sys_GetTimeMicro
+                  0x004d78                  _Sys_GetClock
+                  0x004d88                  _Sys_SetClock
+                  0x004dae                  _Sys_TickInit
+ .text            0x004dcc        0x12e ./output/objects/main.o
+                  0x004dcc                  _read_analog_0
+                  0x004eda                  _main
 
-.dinit            0x004db0         0xf4
- .dinit           0x004db0         0xf4 data_init
+.dinit            0x004efa         0xf4
+ .dinit           0x004efa         0xf4 data_init
 
-.text             0x004ea4        0x170
- .text            0x004ea4         0x7a ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Psw.o)
-                  0x004ea4                  _Psw_Get
-                  0x004f0e                  _Psw_Read
- .text            0x004f1e         0x6c ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Mcu.o)
-                  0x004f1e                  _Mcu_IoInit
-                  0x004f40                  _Mcu_ClockInit
-                  0x004f5c                  _Mcu_UnlockRemap
-                  0x004f6e                  _Mcu_LockRemap
-                  0x004f80                  _Mcu_Init
- .text            0x004f8a         0x38 ./output/objects/main.o
-                  0x004f8a                  _read_analog_0
-                  0x004fa2                  _main
- .text            0x004fc2         0x2e ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Main.o)
-                  0x004fc2                  _BSP_TickIsrExecutor
-                  0x004fce                  _BSP_Executor
- .text            0x004ff0         0x24 ../../../library/RTL/dist/libs/ecc-pic24-rtl.a(RTL_Main.o)
-                  0x004ff0                  _RTL_TickIsrExecutor
-                  0x004ffc                  _RTL_Executor
+.text             0x004fee        0x138
+ .text            0x004fee         0x7a ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Psw.o)
+                  0x004fee                  _Psw_Get
+                  0x005058                  _Psw_Read
+ .text            0x005068         0x6c ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Mcu.o)
+                  0x005068                  _Mcu_IoInit
+                  0x00508a                  _Mcu_ClockInit
+                  0x0050a6                  _Mcu_UnlockRemap
+                  0x0050b8                  _Mcu_LockRemap
+                  0x0050ca                  _Mcu_Init
+ .text            0x0050d4         0x2e ../../../library/BSP/dist/libs/ecc-pic24-bsp.a(BSP_Main.o)
+                  0x0050d4                  _BSP_TickIsrExecutor
+                  0x0050e0                  _BSP_Executor
+ .text            0x005102         0x24 ../../../library/RTL/dist/libs/ecc-pic24-rtl.a(RTL_Main.o)
+                  0x005102                  _RTL_TickIsrExecutor
+                  0x00510e                  _RTL_Executor
