@@ -33,7 +33,7 @@ void read_analog_All()
 
 	double ph;
 	double h_conc = 1e-4; // hydrogen ion concentration in moles per liter
-	ph = adc1 / (0.0592 / -log10(h_conc));
+	ph = adc1 / (0.0592 / -log10(h_conc)); // limit adc1 is 0.0592-0.2072V
 	if (ph > 14){
 		ph = 0;
 	}
@@ -74,6 +74,16 @@ void uart1_line_received(void *evt)
 	else if (!strcmp(line, "led,2,0\r\n"))
 	{
 		Uart2_Printf("LED3 OFF");
+		Led2_Clr();
+	}
+	else if (!strcmp(line, "led,3,2\r\n"))
+	{
+		Uart2_Printf("LED4 ON");
+		Led2_Inv();
+	}
+	else if (!strcmp(line, "led,3,0\r\n"))
+	{
+		Uart2_Printf("LED4 OFF");
 		Led2_Clr();
 	}
 }

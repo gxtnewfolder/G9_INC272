@@ -1,0 +1,1583 @@
+[
+    {
+        "id": "0b45c0ea1736a48d",
+        "type": "tab",
+        "label": "Home",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b0a354414e6810c3",
+        "type": "tab",
+        "label": "Chart",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6e9be8202f92f4cb",
+        "type": "tab",
+        "label": "Status",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c0f1c61ccac4397f",
+        "type": "ui_group",
+        "name": "Soil Moisture",
+        "tab": "8c331805d730ce77",
+        "order": 1,
+        "disp": true,
+        "width": "5",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "979cc8e92caa122d",
+        "type": "ui_group",
+        "name": "pH",
+        "tab": "8c331805d730ce77",
+        "order": 2,
+        "disp": true,
+        "width": "5",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8c331805d730ce77",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ec5a06f7673babdf",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "38ee10320343f9f0",
+        "type": "ui_tab",
+        "name": "Chart",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "bbc5ed54637f9779",
+        "type": "ui_group",
+        "name": "VWC",
+        "tab": "38ee10320343f9f0",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b8d951a3a0825fc3",
+        "type": "ui_group",
+        "name": "pH",
+        "tab": "38ee10320343f9f0",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1a9b9b04375a8819",
+        "type": "ui_tab",
+        "name": "Status",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "484f163a12150926",
+        "type": "ui_group",
+        "name": "LED",
+        "tab": "1a9b9b04375a8819",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9ff8fbfeccd38d2d",
+        "type": "uart read",
+        "z": "0b45c0ea1736a48d",
+        "name": "COM3:115200",
+        "com": "COM3",
+        "baud": "115200",
+        "x": 330,
+        "y": 300,
+        "wires": [
+            [
+                "70c6ec08dc7e3e1d"
+            ]
+        ]
+    },
+    {
+        "id": "a08226c187d5f662",
+        "type": "split",
+        "z": "0b45c0ea1736a48d",
+        "name": "",
+        "splt": ";",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 750,
+        "y": 300,
+        "wires": [
+            [
+                "fb224dc06ca9f2d6"
+            ]
+        ]
+    },
+    {
+        "id": "70c6ec08dc7e3e1d",
+        "type": "change",
+        "z": "0b45c0ea1736a48d",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload.cmdex",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 300,
+        "wires": [
+            [
+                "a08226c187d5f662"
+            ]
+        ]
+    },
+    {
+        "id": "fb224dc06ca9f2d6",
+        "type": "switch",
+        "z": "0b45c0ea1736a48d",
+        "name": "",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 890,
+        "y": 300,
+        "wires": [
+            [
+                "fddc2e131b1981b0"
+            ],
+            [
+                "a41a382159e44c71"
+            ],
+            [
+                "8e9d7544be3a0df3"
+            ],
+            [
+                "219537865e7d3084"
+            ]
+        ]
+    },
+    {
+        "id": "fddc2e131b1981b0",
+        "type": "ui_text",
+        "z": "0b45c0ea1736a48d",
+        "group": "c0f1c61ccac4397f",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Voltage from signal",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1130,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "a41a382159e44c71",
+        "type": "ui_gauge",
+        "z": "0b45c0ea1736a48d",
+        "name": "",
+        "group": "c0f1c61ccac4397f",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "wave",
+        "title": "%VWC",
+        "label": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 1100,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "219537865e7d3084",
+        "type": "ui_gauge",
+        "z": "0b45c0ea1736a48d",
+        "name": "",
+        "group": "979cc8e92caa122d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "wave",
+        "title": "pH",
+        "label": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "14",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 1090,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "8e9d7544be3a0df3",
+        "type": "ui_text",
+        "z": "0b45c0ea1736a48d",
+        "group": "979cc8e92caa122d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Voltage from signal",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1130,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "e078a7524e12dc5b",
+        "type": "uart read",
+        "z": "b0a354414e6810c3",
+        "name": "COM3:115200",
+        "com": "COM3",
+        "baud": "115200",
+        "x": 110,
+        "y": 180,
+        "wires": [
+            [
+                "344c64b7bca0acaf"
+            ]
+        ]
+    },
+    {
+        "id": "344c64b7bca0acaf",
+        "type": "change",
+        "z": "b0a354414e6810c3",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload.cmdex",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 180,
+        "wires": [
+            [
+                "28db7f8dc4aa54c1"
+            ]
+        ]
+    },
+    {
+        "id": "28db7f8dc4aa54c1",
+        "type": "split",
+        "z": "b0a354414e6810c3",
+        "name": "",
+        "splt": ";",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 570,
+        "y": 180,
+        "wires": [
+            [
+                "2838e9511133697c"
+            ]
+        ]
+    },
+    {
+        "id": "2838e9511133697c",
+        "type": "switch",
+        "z": "b0a354414e6810c3",
+        "name": "",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 710,
+        "y": 180,
+        "wires": [
+            [],
+            [
+                "5b0edfc7c42c064c"
+            ],
+            [],
+            [
+                "1f4d35c81cd644bb"
+            ]
+        ]
+    },
+    {
+        "id": "5b0edfc7c42c064c",
+        "type": "ui_chart",
+        "z": "b0a354414e6810c3",
+        "name": "",
+        "group": "bbc5ed54637f9779",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "VWC",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 870,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1f4d35c81cd644bb",
+        "type": "ui_chart",
+        "z": "b0a354414e6810c3",
+        "name": "",
+        "group": "b8d951a3a0825fc3",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "pH",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "14",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 870,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b37791df88547348",
+        "type": "uart read",
+        "z": "6e9be8202f92f4cb",
+        "name": "COM3:115200",
+        "com": "COM3",
+        "baud": "115200",
+        "x": 110,
+        "y": 220,
+        "wires": [
+            [
+                "ccaeb01f12a543e9"
+            ]
+        ]
+    },
+    {
+        "id": "ca53313d42651938",
+        "type": "split",
+        "z": "6e9be8202f92f4cb",
+        "name": "",
+        "splt": ";",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 490,
+        "y": 220,
+        "wires": [
+            [
+                "02341b5f8e8426a1"
+            ]
+        ]
+    },
+    {
+        "id": "ccaeb01f12a543e9",
+        "type": "change",
+        "z": "6e9be8202f92f4cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload.cmdex",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 220,
+        "wires": [
+            [
+                "ca53313d42651938"
+            ]
+        ]
+    },
+    {
+        "id": "02341b5f8e8426a1",
+        "type": "switch",
+        "z": "6e9be8202f92f4cb",
+        "name": "",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 630,
+        "y": 220,
+        "wires": [
+            [],
+            [
+                "98cbeddbf724dd57"
+            ],
+            [],
+            [
+                "30e3d7c3c826a177"
+            ]
+        ]
+    },
+    {
+        "id": "98cbeddbf724dd57",
+        "type": "change",
+        "z": "6e9be8202f92f4cb",
+        "name": "String To Number",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 850,
+        "y": 140,
+        "wires": [
+            [
+                "a3b6e6ef314cb1ef"
+            ]
+        ]
+    },
+    {
+        "id": "30e3d7c3c826a177",
+        "type": "change",
+        "z": "6e9be8202f92f4cb",
+        "name": "String To Number",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 850,
+        "y": 340,
+        "wires": [
+            [
+                "3d9256499e6538dd"
+            ]
+        ]
+    },
+    {
+        "id": "a3b6e6ef314cb1ef",
+        "type": "switch",
+        "z": "6e9be8202f92f4cb",
+        "name": "IF Else VWC",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lt",
+                "v": "5",
+                "vt": "num"
+            },
+            {
+                "t": "btwn",
+                "v": "5",
+                "vt": "num",
+                "v2": "35",
+                "v2t": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 1050,
+        "y": 140,
+        "wires": [
+            [
+                "54fe2e25cb2cd0b2",
+                "0a5692c3c6d9d4f2",
+                "9bc5a25827d985a2"
+            ],
+            [
+                "1b6e0eb9e6fc6036",
+                "fb5f29672d1ebc7a"
+            ],
+            [
+                "54fe2e25cb2cd0b2",
+                "d3a0f08c6bb0456b",
+                "ec600ce3878363ad"
+            ]
+        ]
+    },
+    {
+        "id": "5694831462300d89",
+        "type": "led control",
+        "z": "6e9be8202f92f4cb",
+        "name": "LED:0:ON",
+        "ledId": "0",
+        "ledAction": "1",
+        "x": 1370,
+        "y": 260,
+        "wires": [
+            [
+                "c484e76c79f952cf",
+                "b3fb14178b1912dc"
+            ]
+        ]
+    },
+    {
+        "id": "c484e76c79f952cf",
+        "type": "uart write",
+        "z": "6e9be8202f92f4cb",
+        "name": "COM3:115200",
+        "com": "COM3",
+        "baud": "115200",
+        "x": 1580,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "e797c43b97ac3a30",
+        "type": "led control",
+        "z": "6e9be8202f92f4cb",
+        "name": "LED:0:OFF",
+        "ledId": "0",
+        "ledAction": "0",
+        "x": 1370,
+        "y": 340,
+        "wires": [
+            [
+                "c484e76c79f952cf",
+                "72c213a0ea3c4bd8"
+            ]
+        ]
+    },
+    {
+        "id": "3d9256499e6538dd",
+        "type": "switch",
+        "z": "6e9be8202f92f4cb",
+        "name": "IF Else pH",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lt",
+                "v": "5.5",
+                "vt": "num"
+            },
+            {
+                "t": "btwn",
+                "v": "5.5",
+                "vt": "num",
+                "v2": "8.5",
+                "v2t": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 1050,
+        "y": 340,
+        "wires": [
+            [
+                "5694831462300d89",
+                "a5f5d865ce93b94f",
+                "0b148086ad4cebee"
+            ],
+            [
+                "c9dfae27e5e33e9f",
+                "fdaf6e52cc6e188a",
+                "e797c43b97ac3a30",
+                "82fbc26ec07c3983"
+            ],
+            [
+                "529eb928e8d8745c",
+                "5694831462300d89",
+                "4a59e6adf2a88968"
+            ]
+        ]
+    },
+    {
+        "id": "a5f5d865ce93b94f",
+        "type": "led control",
+        "z": "6e9be8202f92f4cb",
+        "name": "LED:1:INV",
+        "ledId": "1",
+        "ledAction": "2",
+        "x": 1370,
+        "y": 300,
+        "wires": [
+            [
+                "c484e76c79f952cf",
+                "8781ae497503ce7e"
+            ]
+        ]
+    },
+    {
+        "id": "fdaf6e52cc6e188a",
+        "type": "led control",
+        "z": "6e9be8202f92f4cb",
+        "name": "LED:1:OFF",
+        "ledId": "1",
+        "ledAction": "0",
+        "x": 1370,
+        "y": 380,
+        "wires": [
+            [
+                "c484e76c79f952cf",
+                "1483f074b2db6ea7"
+            ]
+        ]
+    },
+    {
+        "id": "c9dfae27e5e33e9f",
+        "type": "led control",
+        "z": "6e9be8202f92f4cb",
+        "name": "LED:2:OFF",
+        "ledId": "2",
+        "ledAction": "0",
+        "x": 1370,
+        "y": 420,
+        "wires": [
+            [
+                "c484e76c79f952cf",
+                "74117129db3e46f6"
+            ]
+        ]
+    },
+    {
+        "id": "529eb928e8d8745c",
+        "type": "led control",
+        "z": "6e9be8202f92f4cb",
+        "name": "LED:2:INV",
+        "ledId": "2",
+        "ledAction": "2",
+        "x": 1370,
+        "y": 460,
+        "wires": [
+            [
+                "c484e76c79f952cf",
+                "a58c0d19ddcbd13e"
+            ]
+        ]
+    },
+    {
+        "id": "0b148086ad4cebee",
+        "type": "change",
+        "z": "6e9be8202f92f4cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Soil is too acidic",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1380,
+        "y": 560,
+        "wires": [
+            [
+                "30f80c44be4de435"
+            ]
+        ]
+    },
+    {
+        "id": "4a59e6adf2a88968",
+        "type": "change",
+        "z": "6e9be8202f92f4cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Soil is too alkaline",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1380,
+        "y": 640,
+        "wires": [
+            [
+                "30f80c44be4de435"
+            ]
+        ]
+    },
+    {
+        "id": "82fbc26ec07c3983",
+        "type": "change",
+        "z": "6e9be8202f92f4cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "normal",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1380,
+        "y": 600,
+        "wires": [
+            [
+                "30f80c44be4de435"
+            ]
+        ]
+    },
+    {
+        "id": "d3a0f08c6bb0456b",
+        "type": "change",
+        "z": "6e9be8202f92f4cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Soil is high humidity",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1380,
+        "y": 680,
+        "wires": [
+            [
+                "32c44d8d01d112e6"
+            ]
+        ]
+    },
+    {
+        "id": "0a5692c3c6d9d4f2",
+        "type": "change",
+        "z": "6e9be8202f92f4cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Soil is low humidity",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1380,
+        "y": 760,
+        "wires": [
+            [
+                "32c44d8d01d112e6"
+            ]
+        ]
+    },
+    {
+        "id": "b3fb14178b1912dc",
+        "type": "change",
+        "z": "6e9be8202f92f4cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1580,
+        "y": 260,
+        "wires": [
+            [
+                "9f512d831f8a2dfd"
+            ]
+        ]
+    },
+    {
+        "id": "8781ae497503ce7e",
+        "type": "change",
+        "z": "6e9be8202f92f4cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1580,
+        "y": 300,
+        "wires": [
+            [
+                "da73e6709375c248",
+                "8aaf0e36e09517a9"
+            ]
+        ]
+    },
+    {
+        "id": "72c213a0ea3c4bd8",
+        "type": "change",
+        "z": "6e9be8202f92f4cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1580,
+        "y": 340,
+        "wires": [
+            [
+                "9f512d831f8a2dfd"
+            ]
+        ]
+    },
+    {
+        "id": "1483f074b2db6ea7",
+        "type": "change",
+        "z": "6e9be8202f92f4cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1580,
+        "y": 380,
+        "wires": [
+            [
+                "da73e6709375c248"
+            ]
+        ]
+    },
+    {
+        "id": "74117129db3e46f6",
+        "type": "change",
+        "z": "6e9be8202f92f4cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1580,
+        "y": 420,
+        "wires": [
+            [
+                "9e758ea4c4476485"
+            ]
+        ]
+    },
+    {
+        "id": "a58c0d19ddcbd13e",
+        "type": "change",
+        "z": "6e9be8202f92f4cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1580,
+        "y": 460,
+        "wires": [
+            [
+                "9e758ea4c4476485",
+                "9f512d831f8a2dfd",
+                "af1f42f157a4efde"
+            ]
+        ]
+    },
+    {
+        "id": "9f512d831f8a2dfd",
+        "type": "ui_switch",
+        "z": "6e9be8202f92f4cb",
+        "name": "",
+        "label": "LED0 pH",
+        "tooltip": "",
+        "group": "484f163a12150926",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 1820,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "da73e6709375c248",
+        "type": "ui_switch",
+        "z": "6e9be8202f92f4cb",
+        "name": "",
+        "label": "LED1 Lime",
+        "tooltip": "",
+        "group": "484f163a12150926",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 1830,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9e758ea4c4476485",
+        "type": "ui_switch",
+        "z": "6e9be8202f92f4cb",
+        "name": "",
+        "label": "LED2 Sulphur",
+        "tooltip": "",
+        "group": "484f163a12150926",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 1840,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "30f80c44be4de435",
+        "type": "ui_text",
+        "z": "6e9be8202f92f4cb",
+        "group": "484f163a12150926",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Status of pH",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1670,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "af1f42f157a4efde",
+        "type": "line notify",
+        "z": "6e9be8202f92f4cb",
+        "name": "line notify",
+        "token": "QNrYs0JS3JJGTGr25JxGFuSET6pkUUDbP4RqycIzwaV",
+        "interval": "50000",
+        "message": "Soil is too alkaline",
+        "source": 0,
+        "x": 1820,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "8aaf0e36e09517a9",
+        "type": "line notify",
+        "z": "6e9be8202f92f4cb",
+        "name": "line notify",
+        "token": "QNrYs0JS3JJGTGr25JxGFuSET6pkUUDbP4RqycIzwaV",
+        "interval": "50000",
+        "message": "Soil is too acidic",
+        "source": 0,
+        "x": 1820,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "ee1caf466445c3da",
+        "type": "ui_switch",
+        "z": "6e9be8202f92f4cb",
+        "name": "",
+        "label": "LED4 VWC",
+        "tooltip": "",
+        "group": "484f163a12150926",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 1830,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "54fe2e25cb2cd0b2",
+        "type": "led control",
+        "z": "6e9be8202f92f4cb",
+        "name": "LED:2:INV",
+        "ledId": "2",
+        "ledAction": "2",
+        "x": 1370,
+        "y": 100,
+        "wires": [
+            [
+                "2fd9e916e096032e",
+                "c484e76c79f952cf"
+            ]
+        ]
+    },
+    {
+        "id": "1b6e0eb9e6fc6036",
+        "type": "led control",
+        "z": "6e9be8202f92f4cb",
+        "name": "LED:2:OFF",
+        "ledId": "2",
+        "ledAction": "0",
+        "x": 1370,
+        "y": 140,
+        "wires": [
+            [
+                "aa4f3c21c344ab6a",
+                "c484e76c79f952cf"
+            ]
+        ]
+    },
+    {
+        "id": "2fd9e916e096032e",
+        "type": "change",
+        "z": "6e9be8202f92f4cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1580,
+        "y": 100,
+        "wires": [
+            [
+                "ee1caf466445c3da"
+            ]
+        ]
+    },
+    {
+        "id": "aa4f3c21c344ab6a",
+        "type": "change",
+        "z": "6e9be8202f92f4cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1580,
+        "y": 140,
+        "wires": [
+            [
+                "ee1caf466445c3da"
+            ]
+        ]
+    },
+    {
+        "id": "fb5f29672d1ebc7a",
+        "type": "change",
+        "z": "6e9be8202f92f4cb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "normal",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1380,
+        "y": 720,
+        "wires": [
+            [
+                "32c44d8d01d112e6"
+            ]
+        ]
+    },
+    {
+        "id": "32c44d8d01d112e6",
+        "type": "ui_text",
+        "z": "6e9be8202f92f4cb",
+        "group": "484f163a12150926",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Status of VWC",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1680,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "ec600ce3878363ad",
+        "type": "line notify",
+        "z": "6e9be8202f92f4cb",
+        "name": "line notify",
+        "token": "QNrYs0JS3JJGTGr25JxGFuSET6pkUUDbP4RqycIzwaV",
+        "interval": "50000",
+        "message": "Soil is high humidity",
+        "source": 0,
+        "x": 1360,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "9bc5a25827d985a2",
+        "type": "line notify",
+        "z": "6e9be8202f92f4cb",
+        "name": "line notify",
+        "token": "QNrYs0JS3JJGTGr25JxGFuSET6pkUUDbP4RqycIzwaV",
+        "interval": "50000",
+        "message": "Soil is low humidity",
+        "source": 0,
+        "x": 1360,
+        "y": 20,
+        "wires": []
+    }
+]
